@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE paragraph [
+
+<!-- DTD 1 глава 2 параграф -->
+<!-- Параграф -->
+<!ELEMENT paragraph (index, name, section+, exercises_block*)>
+<!-- Разделы параграфа -->
+<!ELEMENT section (index, name, text, pictures?)>
+<!-- Упражнения -->
+<!ELEMENT exercises_block (exercise+)>
+<!ATTLIST exercises_block name CDATA #REQUIRED>
+<!ELEMENT exercise (index, text, pictures?)>
+<!-- Картинки -->
+<!ELEMENT pictures (picture+)>
+<!ELEMENT picture (img, text?, name?)>
+<!ELEMENT img EMPTY>
+<!ATTLIST img src CDATA #REQUIRED>
+<!-- Описание общих элементов -->
+<!ELEMENT text (#PCDATA)>
+<!ELEMENT index (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+]>
+<paragraph>
+	<index>2</index>
+	<name>Луч и угол</name>
+	<section>
+		<index>3</index>
+		<name>Луч</name>
+		<text>
+			Проведем прямую а и отметим на ней точку O (рис. 11). Эта точка разделяет
+			прямую на две части, каждая из которых называется лучом, исходящим из точки O (на рисунке 11 один из лучей выделен цветной линией).
+			Точка O называется началом каждого из лучей. Обычно луч обозначают либо малой латинской буквой (например, луч h на рисунке 12, а),
+			либо двумя большими латинскими буквами, первая из которых обозначает начало луча, а вторая - какую-нибудь точку на луче (например,
+			луч OA на рисунке 12, 6).
+		</text>
+		<pictures>
+			<picture>
+				<img src='https://i.postimg.cc/t4FK6YWS/11.png'/>
+				<text>Точка O разделяет прямую на два луча</text>
+				<name>Рис. 11</name>
+			</picture>
+			<picture>
+				<img src='https://i.postimg.cc/76B8Ld0q/12a.png'/>
+				<text>a)</text>
+			</picture>
+			<picture>
+				<img src='https://i.postimg.cc/KjRX3fDB/12b.png'/>
+				<text>б)</text>
+				<name>Рис. 12</name>
+			</picture>
+		</pictures>
+	</section>
+	<section>
+		<index>4</index>
+		<name>Угол</name>
+		<text>
+			Напомним, что угол - это геометрическая фигура, которая состоит из точки и двух лучей, исходящих из этой точки.
+			Лучи называются сторонами угла, а их общее начало - вершиной угла.
+			На рисунке 13 изображен угол с вершиной O и сторонами h и k. На сторонах отмечены точки A и B.
+			Этот угол обозначают так: Lhk , или LAOB, или LO. Угол называется развернутым, если обе его стороны лежат на одной прямой.
+			Можно сказать, что каждая сторона развернутого угла является продолжением другой стороны.
+			На рисунке 14 изображен развернутый угол с вершиной C и сторонами р и q.
+			Любой угол разделяет плоскость на две части. Если угол неразвернутый, то одна из частей называется внутренней, а другая - внешней областью этого угла (рис. 15, а).
+			На рисунке 15, б изображен неразвернутый угол. Точки A, B, C лежат внутри этого угла (т. е. во внутренней области угла), точки D и E - на сторонах угла, а точки P и Q - вне угла (т. е. во внешней области угла).
+			Если угол развернутый, то любую из двух частей, на которые он разделяет плоскость, можно считать внутренней областью угла.
+			Фигуру, состоящую из угла и его внутренней области, также называют углом. Если луч исходит из вершины не развернутого угла и проходит внутри угла, то он делит этот угол на два угла. На рисунке 16, а луч OC делит угол AOB на два угла: AOC и COB. Если угол AOB развернутый, то любой луч OC, не совпадающий с лучами OA и OB, делит этот угол на два угла: AOC и
+			COB (рис. 16, б)
+		</text>
+		<pictures>
+			<picture>
+				<img src='https://i.postimg.cc/90S6d9LS/13.jpg'/>
+				<text>Угол</text>
+				<name>Рис. 13</name>
+			</picture>
+			<picture>
+				<img src='https://i.postimg.cc/tRMGG095/14.png'/>
+				<text>Развернутый угол</text>
+				<name>Рис. 14</name>
+			</picture>
+			<picture>
+				<img src='https://i.postimg.cc/9Q33zGRw/15a.png'/>
+				<text>а)</text>
+			</picture>
+			<picture>
+				<img src='https://i.postimg.cc/ZKvtTfRh/15b.png'/>
+				<text>б)</text>
+				<name>Рис. 15</name>
+			</picture>
+			<picture>
+				<img src='https://i.postimg.cc/85z9x439/16a.png'/>
+				<text>а)</text>
+			</picture>
+			<picture>
+				<img src='https://i.postimg.cc/BvsdB4Cq/16b.png'/>
+				<text>б)</text>
+				<name>Рис. 16</name>
+			</picture>
+		</pictures>
+	</section>
+	<exercises_block name='Практические задания и вопросы'>
+		<exercise>
+			<index>8</index>
+			<text>
+				Проведите прямую, отметьте на ней точки A и B и на отрезке AB
+				отметьте точку C. а) Среди лучей AB, BC, CA, AC и BA назовите совпадающие лучи;
+				б) назовите луч, который  является  продолжением луча CA.
+			</text>
+		</exercise>
+		<exercise>
+			<index>9</index>
+			<text>
+				Начертите три неразвернутых угла и обозначьте их так: LAOB,
+				Lhk , LM .
+			</text>
+		</exercise>
+		<exercise>
+			<index>10</index>
+			<text>
+				Начертите два развернутых угла и обозначьте их буквами.
+			</text>
+		</exercise>
+		<exercise>
+			<index>11</index>
+			<text>
+				Начертите три луча h, k и l с общим началом. Назовите все углы, образованные данными лучами.
+			</text>
+		</exercise>
+		<exercise>
+			<index>12</index>
+			<text>
+				Начертите неразвернутый угол hk . Отметьте две точки внутри этого угла, две точки вне этого угла и две точки на сторонах угла.
+			</text>
+		</exercise>
+		<exercise>
+			<index>13</index>
+			<text>
+				Начертите неразвернутый угол .
+				Отметьте точки A, B, M и N так, чтобы все точки отрезка AB лежали внутри угла, а все точки отрезка MN лежали вне угла.
+			</text>
+		</exercise>
+		<exercise>
+			<index>14</index>
+			<text>
+				Начертите неразвернутый угол AOB и проведите: а) луч OC, который делит угол AOB на два угла; б) луч OD, который не делит угол AOC на два угла.
+			</text>
+		</exercise>
+		<exercise>
+			<index>15</index>
+			<text>
+				Сколько неразвернутых углов образуется при пересечении двух  прямых?
+			</text>
+		</exercise>
+		<exercise>
+			<index>16</index>
+			<text>
+				Какие из точек, изображенных на рисунке 17, лежат внутри угла hk, а какие - вне этого угла?
+			</text>
+			<pictures>
+				<picture>
+					<img src='https://i.postimg.cc/6Q0FHgHC/17.png'/>
+					<name>Рис. 17</name>
+				</picture>
+			</pictures>
+		</exercise>
+		<exercise>
+			<index>17</index>
+			<text>
+				Какие из лучей, изображенных на рисунке 18, делят угол AOB на два угла?.
+			</text>
+			<pictures>
+				<picture>
+					<img src='https://i.postimg.cc/9MgK2THM/18.png'/>
+					<name>Рис. 18</name>
+				</picture>
+			</pictures>
+		</exercise>
+	</exercises_block>
+</paragraph>
